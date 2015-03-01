@@ -4,10 +4,7 @@ body {
 }
 
 .phone {
-<<<<<<< HEAD
     font-family: lato, "Helvetica", sans-serif;
-=======
->>>>>>> FETCH_HEAD
     background: url(../img/bgblack.jpg);
     background-size: cover;
     height: 620px;
@@ -18,48 +15,31 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     overflow: hidden;
-<<<<<<< HEAD
     position: relative;
 }
 
 .content {
     margin-left: 20px;
-=======
-}
-
-.content {
-
->>>>>>> FETCH_HEAD
 }
 
 .content p {
     font-family: lato, "Helvetica", sans-serif;
     font-weight: 300;
-<<<<<<< HEAD
     font-size: 20pt;
-=======
->>>>>>> FETCH_HEAD
     color: #ffffff;
 }
 
 .nav {
-<<<<<<< HEAD
     height: 120px;
     width: 100%;
     margin-top: 85px;
     margin-left: 20px;
-=======
-    height: 100px;
-    width: 100%;
-    margin-top: 20px;
->>>>>>> FETCH_HEAD
 
 }
 
 .nav h1 {
     font-family: lato, "Helvetica", sans-serif;
     font-weight: 300;
-<<<<<<< HEAD
     font-size: 45pt;
     color: #ffffff;
 
@@ -138,8 +118,3 @@ body {
     display: inline-block;
     left: 30%;
 }
-=======
-    color: #ffffff;
-
-}
->>>>>>> FETCH_HEAD
