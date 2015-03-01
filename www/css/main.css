@@ -20,14 +20,22 @@ body {
 
 }
 
+.content p {
+    font-family: lato, "Helvetica", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+}
+
 .nav {
     height: 100px;
     width: 100%;
+    margin-top: 20px;
 
 }
 
 .nav h1 {
     font-family: lato, "Helvetica", sans-serif;
     font-weight: 300;
+    color: #ffffff;
 
 }
