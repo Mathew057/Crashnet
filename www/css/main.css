@@ -83,15 +83,22 @@ body {
 .people {
     width: 100%;
     display: block;
-    margin-top: 150px;
+    margin-top: 30px;
 }
 
 .people h2 {
+    font-family: lato, "Helvetica", sans-serif;
+    font-weight: 300;
     color: #ffffff;
-    font-size: 30pt;
+    font-size: 22pt;
+    line-height: 90%;
+    -webkit-margin-after: 0;
+    -webkit-margin-before: 0;
 }
 .people p {
-    font-size: 20pt;
+    font-size: 12pt;
+    -webkit-margin-after: 10px;
+    -webkit-margin-before: 5px;
 }
 
 #id {
