@@ -2,10 +2,10 @@ var isDriving = false;
 var dropVel = 0;;
 var crashDecel = 0;
 var isCrashing = false;
-const MIN_CRASH_ACCEL = 14; // > gravity + 1G braking
-const FREE_FALL = 0.5;
-const ACCEL_MONITOR_INTERVAL = 10;
-const GRAVITY = 9.8;
+//const MIN_CRASH_ACCEL = 14; // > gravity + 1G braking
+//const FREE_FALL = 0.5;
+//const ACCEL_MONITOR_INTERVAL = 10;
+//const GRAVITY = 9.8;
 
 function registerWatcher() {
 	navigator.geolocation.watchPosition (
@@ -45,15 +45,18 @@ function Vector(x, y, z) {
 }
 
 function crashed(decel) {
-	var msg = "Fuck her right in the pussy";
+	var msg = "Test Test";
 	alert("You are in a serious car accident and probably need medical attention. I would highly advise contacting emergency services.");
 	jQuery.post({
 		url:"https://api.twilio.com/2010-04-01/Accounts/AC4ef0f686e173833b4fc146530a2e3a0b/Messages.json",
 		data:{
 			From:"+19032744826",
-			To:"972800570",
+			To:"9728005780",
 			Body:msg},
 		username:"AC4ef0f686e173833b4fc146530a2e3a0b",
-		password:"0b5e70297d9edd6677bed365291c68f7"
+		password:"0b5e70297d9edd6677bed365291c68f7",
+		success:function (data, a, b) {
+			console.log(data);
+		}
 	});
 }
