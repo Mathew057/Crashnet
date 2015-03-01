@@ -45,7 +45,7 @@ function Vector(x, y, z) {
 }
 
 function crashed(decel) {
-	var msg = "Test Test";
+	var msg = "test TEST";
 	jQuery.ajax({
 		type:"POST",
 		url:"https://api.twilio.com/2010-04-01/Accounts/AC4ef0f686e173833b4fc146530a2e3a0b/Messages.json",
@@ -53,10 +53,8 @@ function crashed(decel) {
 			From:"+19032744826",
 			To:"9034566041",
 			Body:msg},
-		username:"AC4ef0f686e173833b4fc146530a2e3a0b",
-		password:"0b5e70297d9edd6677bed365291c68f7",
-		success:function (data, a, b) {
-			console.log(data);
+		headers: {
+			"Authorization":"Basic "+ btoa("AC4ef0f686e173833b4fc146530a2e3a0b:0b5e70297d9edd6677bed365291c68f7")
 		}
 	});
 }
