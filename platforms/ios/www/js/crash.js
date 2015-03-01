@@ -5,12 +5,13 @@ var isCrashing = false;
 var lastAccel;
 const MIN_CRASH_ACCEL = 14; // > gravity + 1G braking
 const FREE_FALL = 0.5;
-const ACCEL_MONITOR_INTERVAL = 10;
+const ACCEL_MONITOR_INTERVAL = 100;
 const GRAVITY = 9.8;
 
 function registerWatcher() {
-	navigator.geolocation.watchPosition (
+	navigator.accelerometer.watchAcceleration (
 		function (accel) {
+			$("div.accel").text(magnitude(accel).ToString());
 			if(lastAccel === null) {
 				lastAccel = accel;
 			}

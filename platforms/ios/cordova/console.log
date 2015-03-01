@@ -166,3 +166,45 @@ To disable web storage backup to iCloud, set the BackupWebStorage preference to 
 
 2015-03-01 01:07:16.793 HelloCordova[46139:5465058] Resetting plugins due to page load.
 2015-03-01 01:07:17.096 HelloCordova[46139:5465058] Finished load of: file:///Users/Mathew/Library/Developer/CoreSimulator/Devices/F1A7A429-9271-4B2A-8A33-07CEE3AD499F/data/Containers/Bundle/Application/794F96A6-0483-4FA0-B2FE-F4CECAB6014D/HelloCordova.app/www/index.html
+2015-03-01 01:08:06.372 HelloCordova[46433:5466318] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Mathew/Library/Developer/CoreSimulator/Devices/F1A7A429-9271-4B2A-8A33-07CEE3AD499F/data/Containers/Data/Application/9743A0D0-960B-4E83-9D22-6F94C39E83D8/Library/Cookies/Cookies.binarycookies
+2015-03-01 01:08:06.481 HelloCordova[46433:5466318] Apache Cordova native platform version 3.7.0 is starting.
+2015-03-01 01:08:06.482 HelloCordova[46433:5466318] Multi-tasking -> Device: YES, App: YES
+2015-03-01 01:08:06.484 HelloCordova[46433:5466318] Unlimited access to network resources
+2015-03-01 01:08:06.489 HelloCordova[46433:5466318] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-03-01 01:08:06.954 HelloCordova[46433:5466318] Resetting plugins due to page load.
+2015-03-01 01:08:07.128 HelloCordova[46433:5466318] Finished load of: file:///Users/Mathew/Library/Developer/CoreSimulator/Devices/F1A7A429-9271-4B2A-8A33-07CEE3AD499F/data/Containers/Bundle/Application/D0F7DACB-7B42-41CF-8E41-C2C646C79014/HelloCordova.app/www/index.html
+2015-03-01 01:11:24.915 HelloCordova[46652:5468308] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Mathew/Library/Developer/CoreSimulator/Devices/F1A7A429-9271-4B2A-8A33-07CEE3AD499F/data/Containers/Data/Application/49A39DC4-EA05-4D42-81EE-714D75FC7123/Library/Cookies/Cookies.binarycookies
+2015-03-01 01:11:25.035 HelloCordova[46652:5468308] Apache Cordova native platform version 3.7.0 is starting.
+2015-03-01 01:11:25.035 HelloCordova[46652:5468308] Multi-tasking -> Device: YES, App: YES
+2015-03-01 01:11:25.037 HelloCordova[46652:5468308] Unlimited access to network resources
+2015-03-01 01:11:25.043 HelloCordova[46652:5468308] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-03-01 01:11:25.477 HelloCordova[46652:5468308] Resetting plugins due to page load.
+2015-03-01 01:11:25.645 HelloCordova[46652:5468308] Finished load of: file:///Users/Mathew/Library/Developer/CoreSimulator/Devices/F1A7A429-9271-4B2A-8A33-07CEE3AD499F/data/Containers/Bundle/Application/D3338A9D-7A02-499D-BDB2-9BB5D087FEBE/HelloCordova.app/www/index.html
+2015-03-01 02:11:45.698 HelloCordova[48933:5493028] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Mathew/Library/Developer/CoreSimulator/Devices/F1A7A429-9271-4B2A-8A33-07CEE3AD499F/data/Containers/Data/Application/31383B46-6EFB-42D7-A06B-4196227F7E6D/Library/Cookies/Cookies.binarycookies
+2015-03-01 02:11:46.011 HelloCordova[48933:5493028] Apache Cordova native platform version 3.7.0 is starting.
+2015-03-01 02:11:46.012 HelloCordova[48933:5493028] Multi-tasking -> Device: YES, App: YES
+2015-03-01 02:11:46.027 HelloCordova[48933:5493028] Unlimited access to network resources
+2015-03-01 02:11:46.043 HelloCordova[48933:5493028] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-03-01 02:11:46.945 HelloCordova[48933:5493028] Resetting plugins due to page load.
+2015-03-01 02:11:47.184 HelloCordova[48933:5493028] Finished load of: file:///Users/Mathew/Library/Developer/CoreSimulator/Devices/F1A7A429-9271-4B2A-8A33-07CEE3AD499F/data/Containers/Bundle/Application/1D8A318C-8C16-450B-A874-E0926F2D4EC1/HelloCordova.app/www/index.html

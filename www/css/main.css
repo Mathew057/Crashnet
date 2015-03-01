@@ -3,7 +3,7 @@ body {
     margin: 0 0 0;
 }
 
-.phone {
+#phone {
     font-family: lato, "Helvetica", sans-serif;
     background: url(../img/bgblack.jpg);
     background-size: cover;
@@ -104,7 +104,7 @@ body {
 #id {
     position: absolute;
     display: inline-block;
-    left: 160%;
+    left: -80%;
 }
 
 #id .nav {
