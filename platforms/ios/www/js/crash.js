@@ -1,22 +1,27 @@
 var isDriving = false;
-var dropVel = 0;;
+var dropVel = 0;
 var crashDecel = 0;
 var isCrashing = false;
-//const MIN_CRASH_ACCEL = 14; // > gravity + 1G braking
-//const FREE_FALL = 0.5;
-//const ACCEL_MONITOR_INTERVAL = 10;
-//const GRAVITY = 9.8;
+var lastAccel;
+const MIN_CRASH_ACCEL = 14; // > gravity + 1G braking
+const FREE_FALL = 0.5;
+const ACCEL_MONITOR_INTERVAL = 10;
+const GRAVITY = 9.8;
 
 function registerWatcher() {
 	navigator.geolocation.watchPosition (
 		function (accel) {
+			if(lastAccel === null) {
+				lastAccel = accel;
+			}
+			var dt = accel.timestamp - lastAccel.timestamp;
 			if(isDriving) {
 				var accelmag = magnitude(accel)
 				if(accelmag < FREE_FALL) {
-					dropVel += GRAVITY * ACCEL_MONITOR_INTERVAL;
+					dropVel += GRAVITY * dt;
 				}else if(accelmag > MIN_CRASH_ACCEL) {
 					isCrashing = true;
-					crashDecel += magnitude(accel) * ACCEL_MONITOR_INTERVAL;
+					crashDecel += magnitude(accel) * dt;
 				}else if(isCrashing) {
 					isCrashing = false;
 					if(crashDecel > dropVel * 1.3) {
@@ -26,6 +31,7 @@ function registerWatcher() {
 					crashDecel = 0;
 				}
 			}
+			lastAccel = accel;
 		},
 		function () {},
 		{frequency:ACCEL_MONITOR_INTERVAL}
@@ -46,6 +52,7 @@ function Vector(x, y, z) {
 
 function crashed(decel) {
 	var msg = "test TEST";
+	alert(msg);
 	jQuery.ajax({
 		type:"POST",
 		url:"https://api.twilio.com/2010-04-01/Accounts/AC4ef0f686e173833b4fc146530a2e3a0b/Messages.json",
