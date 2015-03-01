@@ -4,7 +4,6 @@ body {
 }
 
 .phone {
-
     background: url(../img/bgblack.jpg);
     background-size: cover;
     height: 620px;
@@ -15,4 +14,28 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     overflow: hidden;
+}
+
+.content {
+
+}
+
+.content p {
+    font-family: lato, "Helvetica", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.nav {
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.nav h1 {
+    font-family: lato, "Helvetica", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+
 }

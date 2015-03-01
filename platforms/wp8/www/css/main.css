@@ -4,7 +4,7 @@ body {
 }
 
 .phone {
-
+    font-family: lato, "Helvetica", sans-serif;
     background: url(../img/bgblack.jpg);
     background-size: cover;
     height: 620px;
@@ -15,4 +15,99 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     overflow: hidden;
+    position: relative;
+}
+
+.content {
+    margin-left: 20px;
+}
+
+.content p {
+    font-family: lato, "Helvetica", sans-serif;
+    font-weight: 300;
+    font-size: 20pt;
+    color: #ffffff;
+}
+
+.nav {
+    height: 120px;
+    width: 100%;
+    margin-top: 85px;
+    margin-left: 20px;
+
+}
+
+.nav h1 {
+    font-family: lato, "Helvetica", sans-serif;
+    font-weight: 300;
+    font-size: 45pt;
+    color: #ffffff;
+
+}
+
+#overview {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+}
+
+#overview .nav {
+    position: relative;
+    display: inline-block;
+    left: 0;
+}
+
+#overview .content {
+    position: relative;
+    display: inline-block;
+    left: 0;
+}
+
+#contacts {
+    position: absolute;
+    display: inline-block;
+    left: 80%;
+}
+
+#contacts .nav {
+    position: relative;
+    display: inline-block;
+    left: 0;
+}
+
+#contacts .content {
+    position: relative;
+    display: inline-block;
+    left: 30%;
+}
+.people {
+    width: 100%;
+    display: block;
+    margin-top: 150px;
+}
+
+.people h2 {
+    color: #ffffff;
+    font-size: 30pt;
+}
+.people p {
+    font-size: 20pt;
+}
+
+#id {
+    position: absolute;
+    display: inline-block;
+    left: 160%;
+}
+
+#id .nav {
+    position: relative;
+    display: inline-block;
+    left: 0;
+}
+
+#id .content {
+    position: relative;
+    display: inline-block;
+    left: 30%;
 }

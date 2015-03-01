@@ -1,5 +1,5 @@
 var isDriving = false;
-var dropVel = 0;;
+var dropVel = 0;
 var crashDecel = 0;
 var isCrashing = false;
 //const MIN_CRASH_ACCEL = 14; // > gravity + 1G braking
@@ -46,6 +46,7 @@ function Vector(x, y, z) {
 
 function crashed(decel) {
 	var msg = "test TEST";
+	alert(msg);
 	jQuery.ajax({
 		type:"POST",
 		url:"https://api.twilio.com/2010-04-01/Accounts/AC4ef0f686e173833b4fc146530a2e3a0b/Messages.json",
