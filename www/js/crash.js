@@ -1,32 +1,39 @@
 var isDriving = false;
-var dropVel = 0;
-const var freeFall = 0.5; // <.5 m/s^2
+var dropVel = 0;;
 var crashDecel = 0;
-const var minAccel = 10;
 var isCrashing = false;
+const MIN_CRASH_ACCEL = 14; // > gravity + 1G braking
+const FREE_FALL = 0.5;
+const ACCEL_MONITOR_INTERVAL = 25;
+const GRAVITY = 9.8;
 
-function Monitor(dt) {
-	if(isDriving) {
-				var accel = getAccel();
-		var accelmag = magnitude(accel)
-		if(accelmag < freeFall) {
-			dropVel += 9.8 * dt;
-		}else if(accelmag > minAccel) {
-			isCrashing = true;
-			crashDecel += magnitude(accel) * dt;
-		}else if(isCrashing) {
-			isCrashing = false;
-			if(crashDecel > dropVel * 1.3) {
-				crashed(crashDecel);
+function registerWatcher() {
+	navigator.geolocation.watchPosition (
+		function (accel) {
+			if(isDriving) {
+				var accelmag = magnitude(accel)
+				if(accelmag < FREE_FALL) {
+					dropVel += GRAVITY * ACCEL_MONITOR_INTERVAL;
+				}else if(accelmag > MIN_CRASH_ACCEL) {
+					isCrashing = true;
+					crashDecel += magnitude(accel) * dt;
+				}else if(isCrashing) {
+					isCrashing = false;
+					if(crashDecel > dropVel * 1.3) {
+						crashed(crashDecel);
+					}
+					dropVel = 0;
+					crashDecel = 0;
+				}
 			}
-			dropVel = 0;
-			crashDecel = 0;
-		}
-	}
+		},
+		function () {},
+		{frequency:ACCEL_MONITOR_INTERVAL}
+	);
 }
 
-function getAccel() {
-
+function getAccel(callback) {
+	navigator.accelerometer.getCurrentAcceleration();
 }
 
 function magnitude(Vec) {
