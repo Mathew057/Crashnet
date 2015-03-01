@@ -20,7 +20,18 @@
 <html>
     <head>
         <script src="js/jquery.js"></script>
-        <script src="js/crash.js"></script>
+        <script src="js/crash.js">
+            document.addEventListener("deviceready", function ()
+            {
+                registerWatcher();
+                isDriving=true;
+            }, false);
+        </script>
+        <script src="js/hammer.min.js"></script>
+        <script src="js/test.js"></script>
+        <div name="accel">accel</div>
+        <div name="drop vel"></div>
+        <div name="crash vel"></div>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
@@ -45,16 +56,12 @@
                 </div>
                 <div class="content">
                     <div class="people">
-<<<<<<< HEAD
                         <h2>Shelly My Dick</h2>
                         <p>(904) 798-3245</p>
                         <h2>Caroline Santa Maria Columbia</h2>
                         <p>(904) 798-3245</p>
                         <h2>Chris's Mom</h2>
                         <p>(904) 798-3245</p>
-=======
-                        
->>>>>>> FETCH_HEAD
                     </div>
                 </div>
             </div>

@@ -83,7 +83,6 @@ body {
 .people {
     width: 100%;
     display: block;
-<<<<<<< HEAD
     margin-top: 30px;
 }
 
@@ -100,17 +99,6 @@ body {
     font-size: 12pt;
     -webkit-margin-after: 10px;
     -webkit-margin-before: 5px;
-=======
-    margin-top: 150px;
-}
-
-.people h2 {
-    color: #ffffff;
-    font-size: 30pt;
-}
-.people p {
-    font-size: 20pt;
->>>>>>> FETCH_HEAD
 }
 
 #id {
