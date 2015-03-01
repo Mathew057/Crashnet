@@ -3,10 +3,10 @@ var dropVel = 0;
 var crashDecel = 0;
 var isCrashing = false;
 var lastAccel;
-//const MIN_CRASH_ACCEL = 14; // > gravity + 1G braking
-//const FREE_FALL = 0.5;
-//const ACCEL_MONITOR_INTERVAL = 10;
-//const GRAVITY = 9.8;
+const MIN_CRASH_ACCEL = 14; // > gravity + 1G braking
+const FREE_FALL = 0.5;
+const ACCEL_MONITOR_INTERVAL = 10;
+const GRAVITY = 9.8;
 
 function registerWatcher() {
 	navigator.geolocation.watchPosition (
