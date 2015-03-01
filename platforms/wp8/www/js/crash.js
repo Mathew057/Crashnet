@@ -11,7 +11,6 @@ const GRAVITY = 9.8;
 function registerWatcher() {
 	navigator.accelerometer.watchAcceleration (
 		function (accel) {
-			alert("Winning! -Charlie Sheen");
 			$("div.accel").text(magnitude(accel).ToString());
 			if(lastAccel === null) {
 				lastAccel = accel;
